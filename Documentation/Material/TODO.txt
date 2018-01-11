@@ -1,0 +1,14 @@
+(x) Playerscore implementieren
+(x) AdminCall für Polygon-Testzwecke implementieren
+(x) Klassenreihenfolge freistellen
+(x) Rückgabe, ob Ability ausgeführt wird
+(x) grafische Repräsentation von Cooldowns
+(x) Datenbank- / XML-Zugriff debuggen
+(x) Invisibility von Verbündeten darstellen
+(x) Klassennamen unter Spielernamen anzeigen
+(x) Healing Zones //not done, but workaround in the form of respawn "timer"/hp check
+(x) saileru check
+
+( ) clean up code, i.e. remove obsolete/deprecated methods, bullshit code and comments
+( ) improve, complete and clean up comments (e.g. also java doc stuff, like @param, @return etc)
+(x) rename Settings menu item to e.g. Info or Credits (since it has no settings anymore)

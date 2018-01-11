@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <!-- <Button
+         android:id="@+id/refresh_map_button"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="16dp"
+         android:text="@string/refresh_map" />
+         -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/TUM_blue">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/HPprogress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_weight="1"
+            android:progressBackgroundTint="#ffc7d9f6"
+            android:progressTint="#ff4284ff"
+            android:progress="15"
+            android:indeterminate="false"
+            android:backgroundTint="@color/TUM_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HP: 0/0"
+            android:id="@+id/HPtext"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:textColor="#ffffffff"
+            android:layout_weight="5" />
+
+    </RelativeLayout>
+
+    <fragment
+         android:id="@+id/map"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         class="com.google.android.gms.maps.SupportMapFragment"/>
+
+</LinearLayout>

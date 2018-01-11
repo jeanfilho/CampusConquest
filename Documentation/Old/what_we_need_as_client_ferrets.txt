@@ -1,0 +1,38 @@
+For the fragment "Team Scoreboard" we need a Http get() method. It should return all 
+values that are needed to fill the Team Scoreboard fragment:
+
+-getTeamScoreBoard (bzw getFacultyStats):
+		returns: 
+			Success: 
+				a JSON Object:
+					faculties: Faculty[]
+					Faculty:
+						id:Integer
+						score:integer
+						players_registered: integer
+						players_active: integer
+						players_dead: integer
+					topPlayers: Players[10]
+						facebookID:???
+						name:String
+
+For the "Statistics" Fragment we need a Http get() method. It should return all 
+values that are needed to fill the Statistics fragment: 
+
+-getUserStats:
+		returns: 
+			Success: 
+				a JSON Object:
+					playtime: Playtime:	hours:integer
+								minutes:integer
+					score:integer
+					kills:integer //number of kills the user has assisted at
+					deaths:integer
+					captures:integer //number of flag captures the user has assisted at
+					faculty:integer
+					polygons:integer //number of polygons the user has drawn
+
+
+PUSH MESSAGES
+Ideally, whenever a flag changes or perhaps also when a player loses HP, we could send Push messages to the respective players (or all players for the flags)? I think we could evaluate them.
+Dunno how plausible it is for flags, might be more performant through polling, but the HP would make sense that way.

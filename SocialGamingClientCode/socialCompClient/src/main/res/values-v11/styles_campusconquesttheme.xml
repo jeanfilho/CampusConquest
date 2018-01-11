@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AutoCompleteTextViewCampusConquestTheme" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/campusconquesttheme_list_selector_holo_light</item>
+	    <item name="android:background">@drawable/campusconquesttheme_edit_text_holo_light</item>
+  </style>
+
+  <style name="ButtonCampusConquestTheme" parent="android:Widget.Holo.Light.Button">
+	  <item name="android:background">@drawable/campusconquesttheme_btn_default_holo_light</item>
+  </style>
+
+  <style name="ImageButtonCampusConquestTheme" parent="android:Widget.Holo.Light.ImageButton">
+	  <item name="android:background">@drawable/campusconquesttheme_btn_default_holo_light</item>
+  </style>
+
+  <style name="SpinnerCampusConquestTheme" parent="android:Widget.Holo.Light.Spinner">
+      <item name="android:background">@drawable/campusconquesttheme_spinner_background_holo_light</item>
+      <item name="android:dropDownSelector">@drawable/campusconquesttheme_list_selector_holo_light</item>
+  </style>
+
+  <style name="ProgressBarCampusConquestTheme" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/campusconquesttheme_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/campusconquesttheme_progress_indeterminate_horizontal_holo_light</item>
+  </style>
+
+  <style name="SeekBarCampusConquestTheme" parent="android:Widget.Holo.Light.SeekBar">
+      <item name="android:progressDrawable">@drawable/campusconquesttheme_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/campusconquesttheme_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:thumb">@drawable/campusconquesttheme_scrubber_control_selector_holo_light</item>
+  </style>
+
+  <style name="RatingBarCampusConquestTheme" parent="android:Widget.Holo.Light.RatingBar">
+      <item name="android:progressDrawable">@drawable/campusconquesttheme_ratingbar_full_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/campusconquesttheme_ratingbar_full_holo_light</item>
+  </style>
+
+  <style name="RatingBarBigCampusConquestTheme" parent="android:Widget.Holo.Light.RatingBar.Indicator">
+      <item name="android:progressDrawable">@drawable/campusconquesttheme_ratingbar_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/campusconquesttheme_ratingbar_holo_light</item>
+  </style>
+
+  <style name="RatingBarSmallCampusConquestTheme" parent="android:Widget.Holo.Light.RatingBar.Small">
+      <item name="android:progressDrawable">@drawable/campusconquesttheme_ratingbar_small_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/campusconquesttheme_ratingbar_small_holo_light</item>
+  </style>
+
+  <style name="ToggleCampusConquestTheme" parent="android:Widget.Holo.Light.Button.Toggle">
+      <item name="android:background">@drawable/campusconquesttheme_btn_toggle_holo_light</item>
+  </style>
+
+</resources>

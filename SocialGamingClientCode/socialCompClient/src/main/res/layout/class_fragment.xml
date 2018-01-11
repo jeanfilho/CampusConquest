@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageButtonLeft"
+                android:layout_column="0"
+                android:src="@drawable/campusconquesttheme_rate_star_big_off_holo_light"
+                android:scaleType="fitCenter" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="20px"
+                android:layout_column="5" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageButtonRight"
+                android:layout_column="8"
+                android:src="@drawable/campusconquesttheme_rate_star_big_off_holo_light"
+                android:scaleType="fitCenter" />
+
+        </TableRow>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Choose a combination"
+                android:id="@+id/class_name"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/TUM_blue" />
+        </LinearLayout>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:clickable="false"
+        android:layout_gravity="center" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/image_assault"
+                        android:src="@drawable/class_assault" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/image_conquerer"
+                        android:src="@drawable/class_conquerer" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/image_medic"
+                        android:src="@drawable/class_medic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/image_spy"
+                        android:src="@drawable/class_spy" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/image_saboteur"
+                        android:src="@drawable/class_saboteur" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="134dp"
+                    android:layout_height="50dp"
+                    android:text="Assault"
+                    android:id="@+id/button0" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Conquerer"
+                    android:id="@+id/button1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Medic"
+                    android:id="@+id/button2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Spy"
+                    android:id="@+id/button3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Saboteur"
+                    android:id="@+id/button4" />
+
+            </TableLayout>
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/confirm_button"
+        android:layout_gravity="center" />
+</LinearLayout>

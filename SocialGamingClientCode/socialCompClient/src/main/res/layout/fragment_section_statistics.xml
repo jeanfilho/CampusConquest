@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/tableabe">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Play time"
+                android:id="@+id/playtime_text"
+                style="@style/AppTheme"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="&lt;playtime>"
+                android:id="@+id/playtime_val"
+                style="@style/AppTheme"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Score"
+                android:id="@+id/score_text"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="&lt;score>"
+                android:id="@+id/score_val"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Kills"
+                android:id="@+id/kills_text"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="&lt;kills>"
+                android:id="@+id/kills_val"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Deaths"
+                android:id="@+id/deaths_text"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="&lt;deaths>"
+                android:id="@+id/deaths_val"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Flags Captured"
+                android:id="@+id/captured_text"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="&lt;captures>"
+                android:id="@+id/captured_val"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty"
+                android:id="@+id/faculty_text"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="&lt;faculty>"
+                android:id="@+id/faculty_val"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poligons Drawn"
+                android:id="@+id/poligons_text"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="&lt;poligons>"
+                android:id="@+id/poligons_val"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

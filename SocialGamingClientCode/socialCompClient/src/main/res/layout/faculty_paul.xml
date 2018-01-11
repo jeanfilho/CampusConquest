@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:clickable="false"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/in_icon"
+                        android:src="@drawable/in_enemy" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/mw_icon"
+                        android:src="@drawable/mw_enemy" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/ch_icon"
+                        android:src="@drawable/ch_enemy" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/ma_icon"
+                        android:src="@drawable/ma_enemy" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/ph_icon"
+                        android:src="@drawable/ph_enemy" />
+                </TableRow>
+            </TableLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="0">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/faculty_in"
+                    android:id="@+id/radioButton0"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/faculty_mw"
+                    android:id="@+id/radioButton1"
+                    android:textSize="25sp"
+                    android:layout_gravity="center" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/faculty_ch"
+                    android:id="@+id/radioButton2"
+                    android:textSize="25sp"
+                    android:layout_gravity="center" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/faculty_ma"
+                    android:id="@+id/radioButton3"
+                    android:textSize="25sp"
+                    android:layout_gravity="center" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/faculty_ph"
+                    android:id="@+id/radioButton4"
+                    android:textSize="25sp"
+                    android:layout_gravity="center" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/confirmFacultyBtn"
+        android:layout_column="0"
+        style="@style/ButtonCampusConquestTheme"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" />
+
+</LinearLayout>

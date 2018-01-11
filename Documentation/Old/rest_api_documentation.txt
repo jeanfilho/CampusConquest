@@ -1,0 +1,307 @@
+Documentation of the http rest api for the social gaming android app "Campus Conquest".
+
+In the following the usage of all available http 'methods' will be explained, and kept up-to-date.
+The methods will for now be sorted by their http function (post, get, ...).
+
+A valid reference besides this document is of course the source code and moreso the file "./conf/routes"
+which contains all methods available for teh api and some documentation on that.
+
+##############################################################################################################################
+
+Format of documentation by examples:
+	POST: 
+		update
+			/positions/:facebookId/:longitude/:latitude/update controllers.Application.updateUserLocation(facebookId: String, longitude: Double, latitude: Double)
+			
+			Where does _ come from and what does _ do?
+					Updates the players position in the map, should be called regularily as the server will treat an user as inactive after one minute of inactivity.
+					A call of this method will put the user in an active state serverside for one minute unless the user performs a successful logout of some sort.
+					An active player will receive updates from the server via GCM about the game world and state.
+					
+			Parameters:
+				facebookId: a mixed String of fixed length gotten through the facebook login, returned by the login function and to be saved locally for future use 
+				longiture:	a double with a valid range of values 0.0d - 1.0d gotten from openstreet maps by the device and necessary to move the player on the map.
+							see openstreetmap for definition of values, should have a precision of 15meters.
+				latitude: 	see longitude
+				
+			Returns:
+				Success:
+					Returns a HTTP 200 OK
+				Failure:
+					JSON FailureObject
+					-100: facebookId not found, please register first.
+					-101: facebookId already active with another device, please logout one device.
+					-102: logitude out of bounds.
+					-103: latitude out of bounds.
+					-104: Missing parameter, None of the parameter may be null.
+				
+	GET:
+		getPlayerCount
+			/game/getPlayerCount controllers.MyApplication.getPlayerCount()
+			
+			Description:
+				returns a data structure containing all registered users organized by their faculty.
+			
+			Parameters: none
+		
+			Returns:
+				Success:
+					a JSON Object
+						playerCount: PlayerCount
+						PlayerCount: 
+							faculties: Faculty[]
+						Faculty:
+							id: Integer
+							name: String
+							playerCount: Integer
+							players: Player[]
+						Player:
+							name: String
+							facebookId: String
+				Failure:
+					none
+			
+##############################################################################################################################
+			
+Some General Stuff:
+
+FailureObject:
+	code: Integer
+	debugMessage: String
+	
+	DefaultCodes for all methods:
+		-000 Method not found 
+			means a parameter was amiss or the method name wasn#t found/spelled right
+		
+
+##############################################################################################################################
+	
+GET METHODS:
+	
+	getAllFaculties
+		/data/faculties controllers.MyApplication.getAllFaculties()
+		
+		Description:
+			returns a datastructure containing all faculties with a name, description and image url for displaying purposes.
+			Contains and id for futher calls like become a member of faculty X.
+		
+		Parameters: none
+		
+		Returns:
+			Success:
+				a JSON Object
+					faculties: Faculty[]
+					Faculty:
+						id: Integer
+						name: String
+						description: String
+						imageURL: String
+			Failure:
+				none
+
+	getFaculty
+		/users/:facebookID/getFaculty controllers.MyApplication.getFaculty(facebookID: String)
+		
+		Description:
+			returns the players faculty see getAllFaculties
+		
+		Parameters:
+			facebookID: the users facebookID blablabla
+		
+		Returns:
+			Success:
+				a JSON Object	
+					Faculty:
+						id: Integer
+						name: String
+						description: String
+						imageURL: String
+			Failure:
+				JSON FailureObject
+				-110: facebookID missing
+				-111: facebookID not found, please register user first.
+				-112: user isn't member of a faculty.
+	
+	getFacultyStats
+		/game/getPlayerCount controllers.MyApplication.getPlayerCount()
+			
+			Description:
+				returns a data structure containing all registered users organized by their faculty.
+			
+			Parameters: none
+		
+			Returns:
+				Success:
+					a JSON Object
+						playerCount: PlayerCount
+						PlayerCount: 
+							faculties: Faculty[]
+						Faculty:
+							id: Integer
+							name: String
+							playerCount: Integer
+							players: Player[]
+						Player:
+							name: String
+							facebookId: String
+				Failure:
+					none
+
+##############################################################################################################################
+
+POST METHODS:
+	
+	enterFacultyIfNone
+		/users/:facebookID/:faculty/enterFacultyIfNone controllers.MyApplication.enterFacultyIfNone(facebookID: String, faculty: Integer)
+		
+		Description:
+			Makes the user a member of a faculty.
+		
+		Parameters:
+			facebookID: see facebookID
+			faculty: positive integer of a existing faculty, see getAllFaculties.
+			
+		Returns:
+			Success:
+				HTTP 200 OK
+			
+			Failure:
+				JSON FailureObject
+					-120 missing parameter
+					-121 facebookID not found, please register first.
+					-122 faculty not found, please provide a valid facultyId.
+					-123 user already belongs to a faculty, can't change faculty.
+					
+					
+
+############
+new methods:
+
+HTTP GET:   /game/:facebookID/:longitude/:latidtude/getPlayersInVicinity controllers.MyApplication.getPlayersInVicinity(String facebookID, Double longitude, Double latitude)
+
+	Description:
+		returns all nearby players to the user with their facult and a status which indicates if they are active / inactive.
+		
+	Parameters:
+		
+	Returns:
+	Success:
+			JSON Object:
+			
+			players : Player[]
+			Player : 
+				facebookID	: String
+				name : String
+				facultyID : Long
+				Status : Strings : <ACTIVE, INACTIVE, DEAD>
+	
+	Failure:
+		JSON FailureObject
+			-130 missing parameter
+			-131 facebookID not found
+
+############
+newer methods:
+
+HTTP POST  /game/:facebookID/attack
+
+	Description:
+		Puts the player into attack mode if possible.
+	
+	Returns:
+	Success:
+		HTTP 200 OK
+		
+	Failure:
+		JSON FailureObject
+			-140 FacebookID not found.
+			-141 Player not registered, please register first.
+			-142 Already in attack mode.
+			-143 Not enough Energy.
+			-144 Cooldown remaining: __ .
+			-145 No Undeads allowed.
+		
+HTTP POST /game/:facebookID/passive
+
+	Description:
+		Puts the player in a non-attack position, to regenerate energy, starts cooldown Until the next attack can be made.
+
+	Returns:
+	Success:
+		JSON Object:
+			cooldown:Long        	milliseconds until the cooldown is off (seconds would work as well, but we will stick with milliseconds :P )
+			energyRemaining:Long	Around 100 or 200 possibly depending on level later on
+			energyPerSecond:Long	Amount of energy regenerated per second sth like 4 or 5 (depending on level system later on)
+			
+	Failure:
+		JSON FailureObject
+			-150 FacebookID not found.
+			-151 Player not found please register first.
+			-152 Player already in passive mode.
+			-153 No Undeads.
+
+HTTP GET /game/:facebookID/pullUpdate
+
+	Description:
+		Returns a JSON Object containing All relevant information on the user and it's surroundings.
+		i.e. HP, Energy, Status, Meshes and more to come.
+		
+	Returns:	
+	Success:
+		JSON Object
+			"energy":long
+			"hp":long
+			"meshes":Mesh[]
+			
+			Mesh{
+				"strength":long
+				"positions":Position[]
+			}
+			
+			Position{
+				"longitude":long
+				"latitude":long
+			}
+		
+	Failure:
+		JSOn FailureObject
+			-160 FacebookID not found.
+			-161 Player not found please register first.
+
+
+
+Server:
+	new call: getPlayersInVicinityWithFacultyID(facebookid, latitude, longitude)
+		player: facebookId, longitude, latitude, facultyId, playerstatus (active, inactive)
+
+Client:
+	display faculty images on map for every player returned by getPlayersInVicinity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

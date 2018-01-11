@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="CampusConquestTheme" parent="@style/_CampusConquestTheme"/>
+
+  <style name="_CampusConquestTheme" parent="android:Theme.Holo.Light">
+    <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+
+    <item name="android:editTextBackground">@drawable/campusconquesttheme_edit_text_holo_light</item>
+
+    <item name="android:textColorHighlight">#994285f4</item>
+    <item name="android:textSelectHandleLeft">@drawable/campusconquesttheme_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/campusconquesttheme_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/campusconquesttheme_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewCampusConquestTheme</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/campusconquesttheme_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/campusconquesttheme_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonCampusConquestTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonCampusConquestTheme</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerCampusConquestTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarCampusConquestTheme</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarCampusConquestTheme</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarCampusConquestTheme</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigCampusConquestTheme</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallCampusConquestTheme</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleCampusConquestTheme</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/campusconquesttheme_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/campusconquesttheme_activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/campusconquesttheme_fastscroll_thumb_holo</item>
+    <item name="android:actionBarStyle">@style/MyActionBarTheme</item>
+  </style>
+
+  <style name="MyActionBarTheme" parent="@android:style/Widget.Holo.ActionBar">
+    <item name="android:background">@color/TUM_blue_light</item>
+    <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+  </style>
+  <style name="MyActionButtonOverflow" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow">
+    <item name="android:src">@drawable/ic_plus</item>
+  </style>
+
+
+</resources>

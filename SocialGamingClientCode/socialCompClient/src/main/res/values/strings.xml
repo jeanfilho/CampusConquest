@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Campus Conquest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_id">1392822801044867</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    
+    <string name="refresh_map">Lookup users/refresh map</string>
+    
+    <string name="request_new_game">Request new game!</string>
+
+    <string name="action_settings">Credits</string>
+    <string name="action_team">Scoreboard</string>
+    <string name="action_map">Live Map</string>
+    <string name="action_stats">Statistics</string>
+    <string name="action_active">Active</string>
+    <string name="action_faculty">Faculty</string>
+    <string name="action_class">Class</string>
+    <string name="action_character">Character</string>
+
+    <string name="faculty_in">Informatik</string>
+    <string name="faculty_mw">Maschinenwesen</string>
+    <string name="faculty_ch">Chemie</string>
+    <string name="faculty_ma">Mathematik</string>
+    <string name="faculty_ph">Physik</string>
+
+    <string name="class_assault">Assault</string>
+    <string name="class_conquerer">Conquerer</string>
+    <string name="class_medic">Medic</string>
+    <string name="class_spy">Spy</string>
+    <string name="class_saboteur">Saboteur</string>
+</resources>
+    

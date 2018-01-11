@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_79" class="java.beans.XMLDecoder">
+ <object class="main.Faculty" id="Faculty0">
+  <void class="main.Faculty" method="getField">
+   <string>id</string>
+   <void method="set">
+    <object idref="Faculty0"/>
+    <int>1</int>
+   </void>
+  </void>
+  <void class="main.Faculty" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="Faculty0"/>
+    <string>Chemistry</string>
+   </void>
+  </void>
+  <void class="main.Faculty" method="getField">
+   <string>description</string>
+   <void method="set">
+    <object idref="Faculty0"/>
+    <string>Faculty of Chemistry</string>
+   </void>
+  </void>
+  <void property="biggestPolygon">
+   <int>3</int>
+  </void>
+  <void property="deathHistory">
+   <void method="add">
+    <object class="main.KillData" id="KillData0">
+     <void class="main.KillData" method="getField">
+      <string>killerID</string>
+      <void method="set">
+       <object idref="KillData0"/>
+       <int>1</int>
+      </void>
+     </void>
+     <void class="main.KillData" method="getField">
+      <string>victimID</string>
+      <void method="set">
+       <object idref="KillData0"/>
+       <string>1337M45T3R</string>
+      </void>
+     </void>
+     <void class="main.EntryData" method="getField">
+      <string>time</string>
+      <void method="set">
+       <object idref="KillData0"/>
+       <object class="java.util.GregorianCalendar">
+        <void property="time">
+         <object class="java.util.Date">
+          <long>1437127655092</long>
+         </object>
+        </void>
+       </object>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void id="Polygon0" property="healArea">
+   <void class="java.awt.Polygon" method="getField">
+    <string>npoints</string>
+    <void method="set">
+     <object idref="Polygon0"/>
+     <int>4</int>
+    </void>
+   </void>
+  </void>
+  <void property="users">
+   <void method="put">
+    <string>illu</string>
+    <object class="main.User" id="User0">
+     <void class="main.User" method="getField">
+      <string>name</string>
+      <void method="set">
+       <object idref="User0"/>
+       <string>all</string>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>facebookID</string>
+      <void method="set">
+       <object idref="User0"/>
+       <string>illu</string>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>stats</string>
+      <void method="set">
+       <object idref="User0"/>
+       <object class="main.Stats" id="Stats0">
+        <void class="main.Stats" method="getField">
+         <string>seconds</string>
+         <void method="set">
+          <object idref="Stats0"/>
+          <int>25</int>
+         </void>
+        </void>
+        <void class="main.Stats" method="getField">
+         <string>score</string>
+         <void method="set">
+          <object idref="Stats0"/>
+          <int>70</int>
+         </void>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>faculty</string>
+      <void method="set">
+       <object idref="User0"/>
+       <object idref="Faculty0"/>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>level</string>
+      <void method="set">
+       <object idref="User0"/>
+       <int>2</int>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>ExP</string>
+      <void method="set">
+       <object idref="User0"/>
+       <int>30</int>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>energy</string>
+      <void method="set">
+       <object idref="User0"/>
+       <long>36</long>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>position</string>
+      <void method="set">
+       <object idref="User0"/>
+       <object class="java.awt.Point" id="Point0">
+        <void class="java.awt.Point" method="getField">
+         <string>x</string>
+         <void method="set">
+          <object idref="Point0"/>
+          <int>1</int>
+         </void>
+        </void>
+        <void class="java.awt.Point" method="getField">
+         <string>y</string>
+         <void method="set">
+          <object idref="Point0"/>
+          <int>-1</int>
+         </void>
+        </void>
+       </object>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>nati</string>
+    <object class="main.User" id="User1">
+     <void class="main.User" method="getField">
+      <string>name</string>
+      <void method="set">
+       <object idref="User1"/>
+       <string>eye</string>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>facebookID</string>
+      <void method="set">
+       <object idref="User1"/>
+       <string>nati</string>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>stats</string>
+      <void method="set">
+       <object idref="User1"/>
+       <object class="main.Stats" id="Stats1">
+        <void class="main.Stats" method="getField">
+         <string>seconds</string>
+         <void method="set">
+          <object idref="Stats1"/>
+          <int>25</int>
+         </void>
+        </void>
+        <void class="main.Stats" method="getField">
+         <string>score</string>
+         <void method="set">
+          <object idref="Stats1"/>
+          <int>40</int>
+         </void>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>faculty</string>
+      <void method="set">
+       <object idref="User1"/>
+       <object idref="Faculty0"/>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>level</string>
+      <void method="set">
+       <object idref="User1"/>
+       <int>2</int>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>ExP</string>
+      <void method="set">
+       <object idref="User1"/>
+       <int>30</int>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>energy</string>
+      <void method="set">
+       <object idref="User1"/>
+       <long>36</long>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>position</string>
+      <void method="set">
+       <object idref="User1"/>
+       <object class="java.awt.Point" id="Point1">
+        <void class="java.awt.Point" method="getField">
+         <string>x</string>
+         <void method="set">
+          <object idref="Point1"/>
+          <int>-1</int>
+         </void>
+        </void>
+        <void class="java.awt.Point" method="getField">
+         <string>y</string>
+         <void method="set">
+          <object idref="Point1"/>
+          <int>-1</int>
+         </void>
+        </void>
+       </object>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>mi</string>
+    <object class="main.User" id="User2">
+     <void class="main.User" method="getField">
+      <string>name</string>
+      <void method="set">
+       <object idref="User2"/>
+       <string>seeing</string>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>facebookID</string>
+      <void method="set">
+       <object idref="User2"/>
+       <string>mi</string>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>stats</string>
+      <void method="set">
+       <object idref="User2"/>
+       <object class="main.Stats" id="Stats2">
+        <void class="main.Stats" method="getField">
+         <string>seconds</string>
+         <void method="set">
+          <object idref="Stats2"/>
+          <int>25</int>
+         </void>
+        </void>
+        <void class="main.Stats" method="getField">
+         <string>score</string>
+         <void method="set">
+          <object idref="Stats2"/>
+          <int>30</int>
+         </void>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>faculty</string>
+      <void method="set">
+       <object idref="User2"/>
+       <object idref="Faculty0"/>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>level</string>
+      <void method="set">
+       <object idref="User2"/>
+       <int>2</int>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>ExP</string>
+      <void method="set">
+       <object idref="User2"/>
+       <int>30</int>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>energy</string>
+      <void method="set">
+       <object idref="User2"/>
+       <long>36</long>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>position</string>
+      <void method="set">
+       <object idref="User2"/>
+       <object class="java.awt.Point" id="Point2">
+        <void class="java.awt.Point" method="getField">
+         <string>y</string>
+         <void method="set">
+          <object idref="Point2"/>
+          <int>1</int>
+         </void>
+        </void>
+       </object>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+<void class="java.awt.Polygon" id="Field0" method="getField">
+ <string>ypoints</string>
+ <void id="intArray0" method="get">
+  <object idref="Polygon0"/>
+  <void index="1">
+   <int>20</int>
+  </void>
+  <void index="2">
+   <int>20</int>
+  </void>
+  <void index="3">
+   <int>10</int>
+  </void>
+  <void index="0">
+   <int>10</int>
+  </void>
+ </void>
+</void>
+<void idref="intArray0"/>
+<void class="java.awt.Polygon" id="Field1" method="getField">
+ <string>xpoints</string>
+ <void id="intArray1" method="get">
+  <object idref="Polygon0"/>
+  <void index="1">
+   <int>10</int>
+  </void>
+  <void index="2">
+   <int>15</int>
+  </void>
+  <void index="3">
+   <int>15</int>
+  </void>
+  <void index="0">
+   <int>10</int>
+  </void>
+ </void>
+</void>
+<void idref="intArray1"/>
+</java>

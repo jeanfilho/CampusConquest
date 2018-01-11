@@ -1,0 +1,60 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/action_zoom"
+        android:icon="@drawable/ic_zoom_out"
+        android:title="Zoom"
+        android:showAsAction="always"
+        android:height = "32dp"/>
+
+    <item android:id="@+id/action_attack"
+        android:icon="@drawable/ic_attack"
+        android:title="Attack"
+        android:showAsAction="always"
+        android:height = "32dp"/>
+
+    <!--Don´t change the position of abilty1 and abilty2! Need to be on place 2 and 3-->
+    <item android:id="@+id/ability1"
+        android:icon="@drawable/ability_default"
+        android:title="Ability #1"
+        android:showAsAction="always"
+        android:height = "32dp"
+        android:width  = "32dp"/>
+
+    <item android:id="@+id/ability2"
+        android:icon="@drawable/ability_default"
+        android:title="Ability #2"
+        android:showAsAction="always"
+        android:height = "32dp"
+        android:width  = "32dp"/>
+
+    <item
+        android:id="@+id/action_map"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/action_map"/>
+
+    <item
+        android:id="@+id/action_team"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/action_team"/>
+
+    <item
+        android:id="@+id/action_stats"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="@string/action_stats"/>
+
+    <item
+        android:id="@+id/action_character"
+        android:orderInCategory="5"
+        android:showAsAction="never"
+        android:title="@string/action_character"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="6"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

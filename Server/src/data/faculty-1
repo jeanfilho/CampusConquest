@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_79" class="java.beans.XMLDecoder">
+ <object class="main.Faculty" id="Faculty0">
+  <void class="main.Faculty" method="getField">
+   <string>id</string>
+   <void method="set">
+    <object idref="Faculty0"/>
+    <int>-1</int>
+   </void>
+  </void>
+  <void class="main.Faculty" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="Faculty0"/>
+    <string>default</string>
+   </void>
+  </void>
+  <void class="main.Faculty" method="getField">
+   <string>description</string>
+   <void method="set">
+    <object idref="Faculty0"/>
+    <string>no Faculty chosen</string>
+   </void>
+  </void>
+  <void property="users">
+   <void method="put">
+    <string>1563395845</string>
+    <object class="main.User" id="User0">
+     <void class="main.User" method="getField">
+      <string>name</string>
+      <void method="set">
+       <object idref="User0"/>
+       <string>MAYAAAA</string>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>facebookID</string>
+      <void method="set">
+       <object idref="User0"/>
+       <string>1563395845</string>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>stats</string>
+      <void method="set">
+       <object idref="User0"/>
+       <object class="main.Stats"/>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>faculty</string>
+      <void method="set">
+       <object idref="User0"/>
+       <object idref="Faculty0"/>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>energy</string>
+      <void method="set">
+       <object idref="User0"/>
+       <long>100</long>
+      </void>
+     </void>
+     <void class="main.User" method="getField">
+      <string>position</string>
+      <void method="set">
+       <object idref="User0"/>
+       <object class="java.awt.Point"/>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

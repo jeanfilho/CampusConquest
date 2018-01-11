@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 3 byte -->
+    <color name="TUM_blue">#0065BD</color>
+    <color name="TUM_blue_light">#4285f4</color>
+    <color name="TUM_blue_dark">#303f9f</color>
+    <!-- 4 byte -->
+    <color name="TUM_blue_trans">#ff0065BD</color>
+    <color name="TUM_blue_light_trans">#ff4285f4</color>
+    <color name="TUM_blue_light_trans_trans">#7f4285f4</color>
+
+    <color name="ch_green">#ff8aff00</color>
+    <color name="ch_green_trans">#60b7ff00</color>
+    <color name="ph_orange">#fff54f47</color>
+    <color name="ph_orange_trans">#60f96b2e</color>
+    <color name="mw_gray">#ff55606f</color>
+    <color name="mw_gray_trans">#6055606f</color>
+    <color name="ma_green">#ff1e551d</color>
+    <color name="ma_green_trans">#603f723f</color>
+    <color name="in_shit">#ff257888</color>
+    <color name="in_shit_trans">#60008fa7</color>
+    <color name="neutral_white">#ffffffff</color>
+
+</resources>
